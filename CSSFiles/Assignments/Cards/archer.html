@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            border: solid;
+            height: 500px;
+            width: 50%;
+            margin: 30px auto;
+            background-color: #CAAEAF;   
+            position: relative;
+        }
+        .box {
+            border: white;
+            border-radius: 50%;
+            margin: 30px auto;
+            height: 370px;
+            width: 220px;
+            position: absolute;
+            z-index: 10;
+            top: 30px;
+            right: 30px;
+            left: 30px;
+            
+        }
+        .box1 {
+            height: 43%;
+            background-color: #C58A82;
+            position: relative;
+        }
+        
+        .box2 {
+            height: 45%;
+            background-color: white;
+            text-align: center;
+            padding: 0;
+        }
+        .box h6 {
+            /* margin-top: 5px; */
+            color: #ED399D;
+        }
+        
+        .box2 p {
+           margin: 15px 0 0 0;
+           padding: 0;
+        }
+        .box3 {
+            height: 12%;
+            background-color: #ED399D;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            gap: 10px;
+        }
+
+        .box3 p {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="box1">
+                <img src="./archery-removebg-preview.png" height="150px" width="200px" alt="">
+            </div>
+            <div class="box2">
+                <h6>Level 5</h6>
+                <h2>The Archer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam quae dicta quis, enim nostrum Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <div class="box3">
+                <div> 
+                    <p>25s</p>
+                    <p>Training</p>
+                </div>
+                <div>
+                    <p>24</p>
+                    <p>Speed</p>
+                </div>
+                <div>
+                    <p>300</p>
+                    <p>Cost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
