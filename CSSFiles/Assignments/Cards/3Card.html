@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: linear-gradient(to left, #ff0000, #ff0b29, #ff1f43, #fa3158, #f3416b, #f64b6b, #f9556b, #fc5e6b, #ff6b58, #ff7d43, #ff902b, #ffa500);
+            width: 100vw;
+        }
+
+        section {
+            margin: 50px auto;
+            height: 400px;
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            gap: 30px;
+        }
+
+        .box {
+            border-radius: 5%;
+            height: 350px;
+            width: 250px;
+            text-align: center;
+            background-color: white;
+            position: absolute;
+        }
+
+        .box:hover {
+            z-index: 20;
+           
+            height: 380px;
+            width: 260px;
+        }
+
+        .box1 {
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .box2 {
+            z-index: 10;
+        }
+
+        .box3 {
+            right: 20px;
+            top: 20px;
+            z-index: 10;
+        }
+
+        .box div {
+            height: 40%;
+            border-start-start-radius: 10%;
+            border-start-end-radius: 10%;
+            border-end-end-radius: 80%;
+            border-end-start-radius: 80%;
+            text-align:center;
+            padding-top: 60px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .box p {
+            margin: 20px 0;
+        }
+
+        .box .btn {
+            padding: 8px 30px;
+            border-radius: 30%;
+        }
+
+        .box1 div {
+            background-color: orange;
+            
+        }
+
+        .box2 div {
+            background-color: red;
+        }
+        .box3 div {
+            background-color: purple;
+        }
+
+        .box1 .btn {
+            background-color: yellow;
+        }
+        .box2 .btn {
+            background-color: red;
+        }
+        .box3 .btn {
+            background-color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box box1">
+            <div>1</div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores quibusdam tempora, culpa libero eligendi laborum recusandae doloremqueepturi quod eius perferendis rerum iste.</P>
+            <button class="btn">CLick Me</button>
+        </div>
+        <div class="box box2">
+            <div>2</div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores quibusdam tempora, culpa libero eligendi laborum recusandae doloremqueepturi quod eius perferendis rerum iste.</P>
+            <button class="btn">CLick Me</button>
+        </div>
+        <div class="box box3">
+            <div>3</div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores quibusdam tempora, culpa libero eligendi laborum recusandae doloremqueepturi quod eius perferendis rerum iste.</P>
+            <button class="btn">CLick Me</button>
+        </div>
+    </section>
+<!-- 
+    doubt - how to make the buttons better 
+    and hover effect better -->
+</body>
+</html>
