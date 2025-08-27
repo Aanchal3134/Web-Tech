@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red:checked~div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        #blue:checked~div{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+        #green:checked~div{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="color" id="red">Red
+    <input type="radio" name="color" id="blue">Blue
+    <input type="radio" name="color" id="green">Green
+
+    <div></div>
+</body>
+</html>

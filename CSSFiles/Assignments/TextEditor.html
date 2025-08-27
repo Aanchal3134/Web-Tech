@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 300px;
+        }
+        #strike:checked~div>h1 {
+            text-decoration-line:line-through;
+        }
+        #underline:checked~div>h1 {
+            text-decoration-line: underline;
+        }
+        #overline:checked~div>h1 {
+            text-decoration-line:overline;
+        }
+
+        #x-axis:checked~div>h1 {
+            text-shadow: 40px 0 0 grey;
+        }
+        #y-axis:checked~div>h1 {
+            text-shadow: 0px 50px 0px grey;
+        }
+        #xy:checked~div>h1 {
+            text-shadow: 0 0 -50px grey;
+        }
+
+        #upper:checked~div>h1 {
+            text-transform: uppercase;
+        }
+        #lower:checked~div>h1 {
+            text-transform: lowercase;
+        }
+        #cap:checked~div>h1 {
+            text-transform: capitalize;
+        }
+
+        #wavy:checked~div>h1 {
+            text-decoration-style: wavy;
+        }
+        #dash:checked~div>h1 {
+            text-decoration-style: dashed;
+        }
+        #double:checked~div>h1 {
+            text-decoration-style: double;
+        }
+
+        #center:checked~div>h1 {
+            text-align: center;
+        }
+        #right:checked~div>h1 {
+            text-align: right;
+        }
+        #justify:checked~div>h1 {
+            text-align: justify;
+        }
+
+        #green:checked~div>h1 {
+            color: green;
+        }
+        #yellow:checked~div>h1 {
+            color: yellow;
+        }
+        #blue:checked~div>h1 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table> -->
+    
+
+    <label for="">Case:</label>
+    <input type="radio" name="case" id="upper">uppercase
+    <input type="radio" name="case" id="lower">lowercase
+    <input type="radio" name="case" id="cap">capitalize
+    <br>
+    <label for="">Shadow:</label>
+    <input type="radio" name="axis" id="x-axis">x-axis
+    <input type="radio" name="axis" id="y-axis">y-axis
+    <input type="radio" name="axis" id="xy">x-y axis
+    <br>
+    <label for="">Decoration:</label>
+    <input type="radio" id="underline" name="decor">underline
+    <input type="radio" id="overline" name="decor">overline
+    <input type="radio" id="strike" name="decor">line-through
+    <br>
+    <label for="">Style:</label>
+    <input type="radio" id="wavy" name="style">wavy
+    <input type="radio" id="dash" name="style">dashed
+    <input type="radio" id="double" name="style">double
+    <br>
+    <label for="">Align:</label>
+    <input type="radio" id="center" name="align">center
+    <input type="radio" id="right" name="align">right
+    <input type="radio" id="justify" name="align">justify
+    <br>
+    <label for="">Color:</label>
+    <input type="radio" id="green" name="color">green
+    <input type="radio" id="yellow" name="color">yellow
+    <input type="radio" id="blue" name="color">blue
+
+    <br><br>
+
+    <div>
+        <H1>Applied changes visible Here</H1>
+    </div>
+
+
+</body>
+</html>

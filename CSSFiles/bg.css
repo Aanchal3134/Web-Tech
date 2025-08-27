@@ -1,0 +1,60 @@
+/* div {
+    height: 1200px;
+    width: 1200px;
+    border: 5px solid black;
+    background-image: url('https://edisontours.com/wp-content/uploads/2022/06/sun-moon-lake.jpg');
+    background-repeat: no-repeat; */
+    /* background-position-x: center;
+    background-position-y: bottom; */
+    /* background-position: center;
+    background-size: cover;
+} */
+/* 
+div {
+    height: 100vh;
+    border: solid;
+    background-color: white;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/d5/12/ec/photo0jpg.jpg?w=900&h=500&s=1');
+    background-repeat: no-repeat;
+    background-size: 600px 500px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div:nth-child(2) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1wJlJSRL8fxtO2OUTstM-mHlsvOXm36U9LNwoW3mggIXxDCKE0T_DpiNwcq0IrSdxOf8&usqp=CAU');
+}
+
+div:nth-child(3) {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/231/470/376/moon-lake-sky-night-wallpaper-preview.jpg');
+}
+
+div:nth-child(4) {
+    background-image: url('https://www.accesswire.com/imagelibrary/49cc55d6-373e-4884-9589-5904ef321fc4/949184/usimg01.jpg');
+}
+
+div:nth-child(5) {
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/sun-moon-lake-at-night-in-taiwan-higrace-photo.jpg');
+} */
+/* 
+if bg image is small it will repeat inside the div, if it is large it will only be partly :focus-visiblewe use bg repeat to prevent it, bg repeat has 3 values, repeat x, repeat y, no repeat. */
+/* 
+bg size:
+auto : by default height and width of the image
+contain option does not crop the image, it will inc the image until one of height or width fits first and stops
+in case of cover option - increase the image until the image is completely fitted in the bg, image is cropped in most of the times */
+
+
+
+
+/* 
+adding mutliple bg images */
+section {
+    height: 70vh;
+    width: 80vh;
+    border: solid;
+    background-image: url('https://www.accesswire.com/imagelibrary/49cc55d6-373e-4884-9589-5904ef321fc4/949184/usimg01.jpg'), ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnxxGUeuLjJBylydqHQl7HZjf7R5E5Y9JXQ&s');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 0px 0px, 200px 0px;
+}

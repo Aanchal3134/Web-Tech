@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        section {
+            display: flex;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #131921;
+            color: white;
+        }
+
+        .cardContain {
+            height: 180px;
+            width: 70vw;
+            /* background-color: antiquewhite; */
+            /* border: 2px solid black; */
+            margin: 0 auto;
+            gap: 30px;
+            display: flex;
+            padding: 0px 20px;
+            align-items: center;
+            overflow-x: scroll;
+        }
+
+        .card {
+            flex-shrink: 0;
+            /* border: solid; */
+            height: 90%;
+            width: 200px;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar {
+            /* used to remove scrollbar from the page */
+            display: none;
+        }
+        .card1 {
+            background-image: url('https://rukminim1.flixcart.com/image/220/220/xif0q/perfume/a/k/i/100-mystic-bloom-perfume-for-women-floral-musky-notes-long-original-imahbyjrakcvmgqh.jpeg?q=60');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .card2 {
+            background-image: url('https://rukminim1.flixcart.com/image/220/220/xif0q/tablet/r/k/q/-original-imahayyde8ugshtm.jpeg?q=60');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .card3 {
+            background-image: url('https://rukminim1.flixcart.com/image/380/380/xif0q/shopsy-wall-clock/g/8/y/cherry-art-amori-small-cherry-amori-1601-analog-maxwell-original-imagjvtdsjfaspzk.jpeg?q=60');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .imageCenter img {
+            height: 300px;
+            width: 100%;
+        }
+
+        nav div>img {
+            height: 30px;
+            
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+        <div class="box box1">
+            <p><i class="fa-solid fa-house"></i> Home</p>
+            <p>Services</p>
+            <p>Contact Us</p>
+            <p>Today's Deals</p>
+        </div>
+        <div class="box box2">
+            <nav>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzRFchU_y_tcKXko7i6sVeSZr8AmAN3kyAKnxW8G4TNtvM7-jlnk7bStKtyS_HfdYlXg&usqp=CAU" alt=""></div>
+                <div><i class="fa-solid fa-user"></i> Profile</div>
+                <div><i class="fa-solid fa-heart"></i> Wishlist</div>
+                <div><i class="fa-solid fa-bag-shopping"></i> Bag</div>
+            </nav>
+            <div class="imageCenter">
+            <img src="./Nykaaimg.png" alt="">
+            </div>
+            <div class="cardContain">
+                <div class="card card1"></div>
+                <div class="card card2"></div>
+                <div class="card card3"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

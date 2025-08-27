@@ -1,0 +1,45 @@
+#under:checked {
+    text-decoration-line: underline;
+}
+
+
+<table>
+        <tr>
+            <td><label for="">Case</label></td>
+            <td><input type="radio" name="case">uppercase</td>
+            <td><input type="radio" name="case">lowercase</td>
+            <td><input type="radio" name="case">capitalize</td>
+        </tr>
+        <tr>
+            <td><label for="">Shadow</label></td>
+            <td><input type="radio" name="shade" id=>x-axis</td>
+            <td><input type="radio" name="shade">y-axis</td>
+            <td><input type="radio" name="shade">x-y axis</td>
+        </tr>
+        <tr>
+            <td><label for="">Decoration</label></td>
+            <td><input type="radio" name="decor" id="under">underline</td>
+            <td><input type="radio" name="decor" id="over">overline</td>
+            <td><input type="radio" name="decor" id="strike">line-through</td>
+        </tr>
+        <tr>
+            <td><label for="">Style</label></td>
+            <td><input type="radio" name="textStyle">wavy</td>
+            <td><input type="radio" name="textStyle">dashed</td>
+            <td><input type="radio" name="textStyle">double</td>
+        </tr>
+        <tr>
+            <td><label for="">Align</label></td>
+            <td><input type="radio" name="align">center</td>
+            <td><input type="radio" name="align">right</td>
+            <td><input type="radio" name="align">justify</td>
+        </tr>
+        <tr>
+            <td><label for="">Color</label></td>
+            <td><input type="radio" name="color">black</td>
+            <td><input type="radio" name="color">yellow</td>
+            <td><input type="radio" name="color">red</td>
+        </tr>
+    </table>
+    
+    <br><br>

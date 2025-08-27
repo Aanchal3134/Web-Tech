@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //ASSIGNMENT 1
+    <fieldset>
+    <legend>Marathon Registration</legend>
+        <label>Name</label>
+        <input placeholder="Guest" name="name">
+        <br>
+        <br>    
+        <label>Age</label>
+        <input min="16" max="60" name="age">
+        <br>
+        <br>
+        <label>Distance</label>
+        <input type="radio" name="dist">15 km
+        <input type="radio" name="dist">30 km
+        <input type="radio" name="dist">50 km
+        <br>
+        <br>
+        <label>Group</label>
+        <select name="group">
+            <option>Adult</option>
+            <option>Kids</option>
+            <option>Old</option>
+        </select>
+        <br>
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="gender">Male 
+        <input type="radio" name="gender">Female 
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </fieldset> -->
+
+    <!-- ASSIGNMENT - 2 -->
+    <center>
+
+    <h1 style="color: rgb(95, 82, 180);"><u>Student Registration Form</u></h1>
+    <table cellspacing="0" cellpadding="5" style="background-color: rgb(95, 82, 180); color: white;">
+        <form>
+        <tr>
+            <td>FIRST NAME</td>
+            <td>
+                <input type="text" name="firstName" max="30" pattern="[a-zA-Z]{,30}">(max 30 characters a-z A-Z)
+            </td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td>
+                <input max="30" name="lastName" pattern="[a-zA-Z]{,30}">(max 30 characters a-z A-Z)
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td>
+                <input type="date" name="dateOfBirth">
+                <!-- <select>`
+                    Day
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select>
+                <select>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">Aug</option>
+                    <option value="">Sept</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+                <select>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                </select> -->
+            </td>
+        </tr>
+
+        <tr>
+            <td>EMAIL ID</td>
+            <td>
+                <input type="email" name="emailID">
+            </td>
+        </tr>
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td>
+                <input type="number" name="mobileNum" size="10" >
+            </td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" name="gender">Male 
+                <input type="radio" name="gender">Female 
+            </td>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <td>
+                <textarea id="" name="address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td>
+                <input type="text" name="city" pattern="[a-zA-Z]{,30}">(max 30 characters a-z and A-Z)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>PINCODE</td>
+            <td>
+                <input type="number" name="pincode" pattern="[0-9]{6}">(6 digit number)
+            </td>
+        </tr>
+        <tr>
+            <td>STATE</td>
+            <td>
+                <input type="text" name="state" pattern="[a-zA-Z]{,30}">(max 30 characters a-z and A-Z)
+            </td>
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td>
+                <input type="text" name="country" value="India">
+            </td>
+        </tr>
+        <tr>
+            <td>HOBBIES</td>
+            <td>
+                <input type="checkbox" name="hobby1" value="read">Reading
+                <input type="checkbox" name="hobby2" value="sing">Singing
+                <input type="checkbox" name="hobby3" value="Sports">Sports
+                <input type="checkbox" name="hobby4" value="dance">Dancing
+                <input type="checkbox" name="hobby5" value="other">Other
+                <input type="text" name="hobby6" placeholder="Type other hobby"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Qualifications</td>
+            <td>
+                <table>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td>
+                            <input name="board1" type="text">
+                        </td>
+                        <td>
+                            <input name="percent1" type="number">
+                        </td>
+                        <td>
+                            <input name="yop1" type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td>
+                            <input name="board2" type="text">
+                        </td>
+                        <td>
+                            <input name="percent2" type="number">
+                        </td>
+                        <td>
+                            <input name="yop2" type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td>
+                            <input name="board3" type="text">
+                        </td>
+                        <td>
+                            <input name="percent3" type="number">
+                        </td>
+                        <td>
+                            <input name="yop3" type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td>
+                            <input name="board4" type="text">
+                        </td>
+                        <td>
+                            <input name="percent4" type="number">
+                        </td>
+                        <td>
+                            <input name="yop4" type="number">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Courses Applied For</td>
+            <td>
+                <input type="radio" name="course" value="btech">B.Tech
+                <input type="radio" name="course" value="bsc">B.Sc
+                <input type="radio" name="course" value="ba">B.A
+                <input type="radio" name="course" value="bcom">B.Com
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+        </form>
+    </table>
+    </center>
+</body>
+</html>
+
+<!-- 
+name attribute is used to get the field in the url which is being sent to backend, whatever name we provide here 
+we get in url as name="input/value_provided" -->
+
+<!-- http://127.0.0.1:5500/Form/assignmentForm.html?firstName=Theresa&lastName=Gray&emailID=example%40gmail.com&mobileNum=06457345321&address=Shadowhunter+Institute&city=Mumbai&pincode=675438&state=Maharashtra&country=India&hobby4=dance&hobby6=&board1=cbse&percent1=98&yop1=2021&board2=cbse&percent2=98&yop2=2021&board3=cbse&percent3=98&yop3=2021&board4=cbse&percent4=98&yop4=2021&course=btech -->
+
+

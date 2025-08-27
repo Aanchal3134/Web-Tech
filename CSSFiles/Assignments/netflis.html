@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        .container {
+            height: 300px;
+            width: 90vw;
+            /* background-color: antiquewhite; */
+            border: 2px solid black;
+            margin: 0 auto;
+            gap: 30px;
+            display: flex;
+            padding: 0px 20px;
+            align-items: center;
+            overflow-x: scroll;
+        }
+        .card {
+            flex-shrink: 0;
+            border: solid;
+            height: 90%;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            /* used to remove scrollbar from the page */
+            display: none;
+        }
+
+        .card1 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRhpHnfh6ia4QcotnBIjOTFL15LZcxTPjXf5VFU_E_ayrXSswVPM_vAfqrmSoUqf-gC_bRjsC6918GtEasl95dPq6PmppVAHtndE5xrFBIzsX0JVN6c9w-0AVT1lkdh3b6Xa.webp?r=2b8');
+        }
+
+        .card2 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcK02fNAXg4aOs5yvSF21rM5tNJUY_CpdHczoWzv6Jx9piGyD2nSXtuAhJZtzUWTXOynw38JtkN78cU5dHzG2K-cAJVvWhJcve-ChY3uorTAXlC5hgeaXvgLZLX4AAc6na5h.webp?r=c28');
+        }
+
+        .card3 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU73BvQjJgydQFEJ-vZZw9QtO8fL6lIxc71x9tOqxgDWh_BHokCWPIbGC5AxJjDk0D_sIH5KhmmYm9HLr3DKUXg8eo6nzF0rtSI.webp?r=d95');
+        }
+
+        .card4 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaW57jWqw0Gs9gqgmW816THwyNfPqphIiruQRFy9KXtt9PTPJpB4kzDKriPcpNjPKCj0itu1Yfjl-CR8rGEokBHPKE4O9lZQHXHRRpUHEelwoKk8lOf4gqlws-HnR2iZeSk4.webp?r=609');
+        }
+
+        .card5 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABW4CRQBTGOLc0WyihSpFMTOpyH2ehGTLXjUQK4Jmawmx11SukR4ffRUDng7u_YpZbAbyDcLEzN9bPQy8bf1qaY60J2VNo1VPkKwG2dCaZMYK91pMQqitdlJ0EL01ohzZtiO1.webp?r=4f3');
+        }
+
+        .card6 {
+            background-image: url('https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABace3lfDYdvDP5GhS8n6Djz3jW0sjZtFLOYIGR9fQQS48CE1DC8PQ8-DlTy5qKPDPjeQcfX7AVJzFKz2zW2lsbUq5yiYN0g1NmTRk6F4dajOtAdVKLn_bBW6tGbQr22e74Mx.webp?r=fb9');
+        }
+
+        .card7 {
+            background-image: url('https://occ-0-6336-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp?r=062');
+        }
+
+        .card8 {
+            background-image: url('https://occ-0-6336-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp?r=c23');
+        }
+
+        .card9 {
+            background-image: url('https://occ-0-6336-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2');
+        }
+
+        .card10 {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDmy_xVzPZKztWcZ2sQST0e4UZ_nyksQiDg&s');
+        }
+
+        .card11 {
+            background-image: url('https://occ-0-6336-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVVzJ7Q5ewWWr7Ju9Vpu5gUq1Guy_hTrvChxJceb-sKqWPiIs1YGHsy_iC2mNT5bKs2BepshCHriwd7IQhYM2HPuqd7MBfqMXFL8nXJshtQEi6-KAKZAcSvG7xE3daK4ABuC.webp?r=81a');
+        }
+
+        .card12 {
+            background-image: url('https://www.tallengestore.com/cdn/shop/products/PeakyBlinders-NetflixTVShow-ArtPoster_3cf3e9e1-1ba8-43ac-beb0-f46288b1965d.jpg?v=1619864553');
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card card1"></div>
+        <div class="card card2"></div>
+        <div class="card card3"></div>
+        <div class="card card4"></div>
+        <div class="card card5"></div>
+        <div class="card card6"></div>
+        <div class="card card7"></div>
+        <div class="card card8"></div>
+        <div class="card card9"></div>
+        <div class="card card10"></div>
+        <div class="card card11"></div>
+        <div class="card card12"></div>
+    </section>
+</body>
+</html>

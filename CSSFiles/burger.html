@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: solid;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        .card {
+            position: absolute;
+        }
+
+        .card1 {
+            top: 150px;
+            left: 150px;
+            z-index: 2;
+        }
+
+        .card2 {
+            right: 0px;
+            top: 150px;
+            z-index: 1;
+        }
+
+        .card3 {
+            left: 40px;
+            top: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card1 card">
+            <img src="./burger2-removebg-preview.png" alt="">
+        </div>
+        <div class="card2 card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeIbVYDuyOBvmWTH59YmnRto1xQee7iZSMMw&s" alt="">
+        </div>
+        <div class="card3 card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZ87eqKp3vrm-ctUpBs7OsF6LvPA8a9AGmg&s" alt="">
+        </div>
+    </section>
+</body>
+</html>

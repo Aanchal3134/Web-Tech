@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 500px;
+            width: 500px;
+        }
+        div {
+            height: 100px;
+            border: solid;
+        }
+        #one:hover~#two {
+            background-color: aqua;
+        }
+        #two:hover~#three {
+            background-color: rgb(165, 203, 40);
+        }
+        #three:hover~#four {
+            background-color: rgb(47, 81, 111);
+        }
+        #four:hover~#five {
+            background-color: rgb(158, 231, 81);
+        }
+        #five:hover~#one { 
+            /* we cannot go to the upper siblings, we can only reah the lower siblings - so  this one won't work */
+            background-color: rgb(152, 40, 51);
+        }
+
+        /* or can give same class to all like card and use the adjacent sibling concept 
+        .card:hover+ .card */
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+    </section>
+</body>
+</html>

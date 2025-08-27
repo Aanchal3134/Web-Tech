@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+
+            /* height will be taken based on content
+             height: 500px; */
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 30px;
+            /* to center margin auto */
+            margin: 0px auto;
+            padding: 20px;
+        }
+
+        div img {
+            height: 250px;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        div h1 {
+            text-align: center;
+            text-decoration: underline;
+            margin: 10px 0px 10px;
+        
+        }
+
+        /* div:hover h1 {
+            text-shadow: 5px 5px 4px red;
+        }
+
+         */
+        div:hover{
+            /* box-shadow: x-axis, y-axis, blur, spread ,color .........spread to give shadow on all sides*/
+            box-shadow: 5px 5px 10px rgb(39, 38, 38);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- USE BOX MODEL TO CREATE THIS  -->
+     <div>
+        <img src="https://www.realsimple.com/thmb/RWjUZw7FjWq7sUmQpFMm_4pUPcs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-lilies-GettyImages-2177798805-bc0ca891e62845a5a2d0993fd329e16c.jpg" alt="">
+
+        <h1>Lilies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eos facilis sit voluptatum, quis harum, corrupti ab atque perferendis architecto, ratione nostrum mollitia et velit? Omnis ullam alias modi dignissimos.</p>
+     </div>
+</body>
+</html>

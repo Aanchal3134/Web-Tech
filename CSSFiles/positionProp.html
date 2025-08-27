@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 500px;
+            width: 800px;
+            margin: 0 auto;
+            border: solid;
+            background-color: green;
+            position: relative;
+        }
+
+        .card {
+            height: 100px;
+            width: 100px;
+            border: solid;
+            background-color: violet;
+           position:absolute;
+
+        }
+
+        .card1 {
+            background-color: aqua;
+            
+            /* z-index: 10; */
+            top: 0;
+            right: 0;
+        }
+
+        .card2 {
+            background-color: blue;
+            /* position: absolute; */
+            /* left: 200px; */
+            right: 0;
+            bottom: 0;
+        }
+        .card3 {
+            background-color: bisque;
+            /* position: absolute; */
+            left: 0;
+            top: 0;
+        }
+        .card4 {
+            background-color: red;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- POSITION PROPERTY IN CSS 
+    WITH POSITION PROP WE USE IT WITH HELPING PROP LIKE TOP, BOTTOM, LEFT , RIGHT 
+    
+    WE CANNOT USE top , bottom together
+    or left right together
+    on passing top: 20px the elem moves away from the top by 20px
+    space will not be acquired by an elem
+    the space will be left as it is.
+
+
+
+    POSITION ABSOLUTE:
+    1. in case of absolute the otheer elem occupy the space
+
+    2. z index is more : that elem will come to the top
+    by default z index for elem is one
+
+
+3. the elem will float
+   4.  if there is no position PROP OF ancestor(OTHER THAN THE DEFAULT STATIC) it will move woth respect to viewport
+
+   5. IF THE ANCESTOR HAS OTHER POSITION PROP OTHER THAN STATIC THEN, ELEM WILL MOVE 
+    -->
+   <section class="container">
+        <div class="card1 card"></div>
+        <div class="card2 card"></div>
+        <div class="card3 card"></div>
+        <div class="card4 card"></div>
+   </section>
+     
+</body>
+</html>

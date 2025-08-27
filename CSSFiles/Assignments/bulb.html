@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img{
+            display: none;
+
+        }
+         */
+        /* .on:checked ~.on{
+            display: block;
+        }
+
+        .off:checked ~.off{
+            display: block;
+        } */
+
+        img{
+            height: 0;
+        }
+        #onBtn:checked ~ #onBulb {
+            height: 200px;
+            width: 100px;
+        }
+        #offBtn:checked ~ #offBulb {
+            height: 200px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+        <label for="">Switch Bulb On/Off:</label>
+        <input class="on" id="onBtn" type="radio" name="switch" value="on">On
+        <input class="off" id="offBtn" type="radio" name="switch" value="off">Off
+
+        <br> <br>        
+        <!-- general sibling -->
+        <img class="off" id="offBulb" src="https://c7.uihere.com/files/825/807/809/bulb-electricity-energy-glass.jpg" >
+        <img class="on" id="onBulb" src="https://www.freeiconspng.com/thumbs/bulb/clip-art-yellow-light-bulb-png-8.png" />
+</body>
+</html>

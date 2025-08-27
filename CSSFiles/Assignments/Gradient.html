@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box:hover {
+            background-image: conic-gradient(green 0deg, green 120deg, red 120deg, red 240deg, yellow 240deg, yellow 360deg);
+        }
+        .box {
+            height: 300px;
+            width: 300px;
+            border: solid;
+            /* border-radius: 50%; */
+            background-image: linear-gradient(to bottom, red 0px, red 100px, green 100px, green 200px, blue 200px, blue 300px);
+            /* to top right, to top left are diagonal values, otehriwse we can to right, to left, to top, 
+            to bottom - is by default */
+
+            /* background-image: radial-gradient(red, yellow, blue); */
+            /* background-image: radial-gradient(circle, red, yellow, blue); */
+            /* background-image: conic-gradient(red 0deg, red 120deg, yellow 120deg, yellow 240deg, green 240deg, green 360deg); */
+        }
+    </style>
+</head>
+<body>
+    <!-- gradient 
+    1. linear gradient (direction, color1, color2, .......color n) - direction can have values like to top, to left,
+    to top left, to top right
+   2.  radial gradient (shape, color1, color2, ......color n)
+    3. conic gradient (color1, color2, ..........color n) -->
+
+    <div class="box">
+    </div>
+
+
+    <!-- color space - gradient website, to generate colors -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::selection {
+            /* selecting the h1 will make these changes  */
+            color: yellow;
+            background-color: red;
+        }
+        p, h1 {
+            user-select: none; 
+            /* property of css that dies not allow the user to select the targetted elem */
+        }
+        h1::after {
+            content: "🤗";
+            background-color: aqua;
+        }
+
+        h1::before {
+            content: "😁";
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        p::first-line {
+            background-color: greenyellow;
+        }
+
+        [alt] {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Times Of India</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quibusdam illum officia. Quo, itaque quidem. A fugiat corrupti, excepturi, maxime nobis expedita quidem veritatis iure asperiores quos molestias, laborum officiis.
+        Commodi, quas asperiores, provident neque maxime quasi odit voluptates tenetur minus labore vel expedita repellat officia magni, ipsum reprehenderit quae ullam cumque enim accusamus tempora ad voluptatibus aperiam fugit. Animi.
+        Laboriosam reiciendis quae distinctio a illum nesciunt aliquam corrupti excepturi autem, optio, non tempore adipisci! Quas ratione sit repudiandae, laboriosam rerum dolores nemo corporis nihil obcaecati iusto repellendus eveniet odio?
+        Dolorem maxime aut sed ipsam assumenda est dolorum repudiandae, dolore voluptate a tempora, quis nemo quia nihil blanditiis perferendis beatae reprehenderit! Facere provident labore necessitatibus delectus a nemo ut at?
+        Consectetur tempora itaque corporis sint eum sunt perspiciatis non facere quae recusandae necessitatibus vitae, aliquam ad, commodi voluptas quos sapiente quas consequatur repellat minus! Eius, officiis fugiat. Quia, unde vero!
+        Magnam alias accusantium eum perferendis unde quo consectetur, officia possimus laudantium nemo. Ipsum, molestias eaque. Officiis fugiat laboriosam molestiae perspiciatis saepe assumenda facilis itaque! Inventore quasi nam qui. Quidem, laborum.
+        Delectus quo consequuntur quis eveniet quisquam deleniti dolore asperiores amet ipsa nesciunt dolores illo vero minima quod facilis harum voluptatem, voluptas expedita quidem nam illum, cupiditate perspiciatis doloribus. Delectus, hic!
+        Consectetur incidunt voluptates sapiente. Suscipit laboriosam dolore error doloremque corporis ipsum voluptate animi, cum ab maxime dicta repudiandae quas, dolores fuga tempore esse quaerat? Est ullam temporibus aperiam autem voluptate.
+    </p>
+<!-- 
+    targetting using atrribute is - [attribute name] {}, [attr name = "value"] -->
+    <!-- https://codeshare.io/axeyKd -->
+
+    <img src="" alt="nature">
+    <img src="" alt="">
+    <img src="" alt="">
+</body>
+</html>

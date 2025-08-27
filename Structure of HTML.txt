@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+<head>
+	<title>First Page</title>
+</head>
+<body>
+	This is the Structure of HTML
+</body>
+
+</html>

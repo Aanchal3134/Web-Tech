@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            height: 400px;
+            width: 200px;
+            border: 6px solid black;
+            border-radius: 48% 52% 50% 50% / 55% 58% 42% 45% ;
+            background-image: linear-gradient(to left top, #505168, #536f82, #628c91, #84a89a, #b3c0a4);
+        }
+
+        #box2 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-image: linear-gradient(to right top, #ffa3af, #ec95b9, #cf8cc3, #aa86c9, #7a82ca, #5d87cc, #3b8cc9, #008fc3, #009bc1, #00a5ac, #00ac86, #00af54);
+        }
+
+        #box3 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 100% 0% 0% 100% / 51% 52% 48% 49% ;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        }
+
+        #box4 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 2% 98% 0% 100% / 15% 71% 29% 85%;
+            background-image: linear-gradient(to left top, #2f9c95, #5b865f, #726c42, #765340, #664147);
+        }
+
+        #box5 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 100% 0% 0% 100% / 0% 100% 0% 100% ;
+            background-image: linear-gradient(to left top, #64113f, #8a415d, #af6d7e, #d39ba4, #f7cacd);
+        }
+
+        #box6 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 100% 0% 100% 0% / 47% 100% 0% 53% ;
+            background-image: linear-gradient(to left top, #f29ca3, #e9a9d6, #c5bffb, #97d5ff, #84e6f8);
+        }
+
+        #box7 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 62% 38% 100% 0% / 73% 32% 68% 27% ;
+            background-image: radial-gradient(circle, #68edc6, #6becf4, #9ee7ff, #cee1ff, #e5e1ee);
+        }
+
+        #box8 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 70% 20% 90% 30% / 40% 70% 30% 60%;
+            background-image: linear-gradient(red, green, purple, yellow, blue, violet, indigo);
+        }
+
+        #box9 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
+            background-image: radial-gradient(circle, #8aa29e, #7f9e7f, #969255, #bd7942, #db5461);
+        }
+
+        #box10 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 62% 38% 46% 54% / 24% 23% 77% 76% ;
+            background-image: linear-gradient(to top, #2d1e2f, #3f4b67, #437e96, #60b3b1, #a9e5bb);
+        }
+
+        #box11{
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 76% 24% 48% 52% / 17% 76% 24% 83% ;
+            background-image: linear-gradient(to bottom, #fffd82, #ffc668, #ff8f73, #f3638d, #b54fa5, #8852a9, #5553a4, #095096, #1f5287, #2f5378, #3d5369, #4a525a);
+        }
+        #box12{
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 38% 62% 45% 55% / 38% 47% 53% 62% ;
+            background-image: linear-gradient(to top, #e84855, #c17020, #8a8a26, #529658, #1b998b);
+        }
+        #box13 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 30% 70% 70% 30% / 50% 40% 60% 50%;
+            background-image: linear-gradient(to bottom, #8d9ec6, #4bb9ec, #00d6f4, #00eed1, #37ff8b);
+        }
+
+        #box14 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 85% 15% 80% 20% / 20% 80% 20% 80%;
+            background-image: linear-gradient(to right, #0496ff, #687fe5, #8869c6, #9653a4, #994081, #923f7d, #8c3d79, #853c75, #754989, #5f5599, #4061a2, #006ba6);
+        }
+
+        #box15 {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 25% 25% 75% 75% / 75% 25% 25% 75%;
+            background-image: linear-gradient(to right bottom, #cfffb0, #d1d86e, #d8ad33, #df7b08, #e03616);
+        }
+
+        #box16 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 100% 50% 0% 50% / 50% 100% 50% 0%;
+            background-image: linear-gradient(to right bottom, #58355e, #823065, #ab235b, #cd1d42, #e03616);
+        }
+
+        #box17 {
+            height: 300px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 60% 40% 30% 70% / 30% 70% 60% 40%;
+            background-image: linear-gradient(to bottom, #313638, #365a58, #4f7f62, #8e9e5c, #e4b363);
+        }
+
+        #box18 {
+            height: 250px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 90% 10% 50% 50% / 50% 50% 10% 90%;
+            background-image: linear-gradient(to left, #b9baa3, #aa9b75, #a17a4d, #9a5530, #902923);
+        }
+
+        #box19 {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 40% 60% 20% 80% / 80% 20% 60% 40%;
+            background-image: linear-gradient(to left, #ea526f, #e05ba2, #bf71cd, #8788e9, #279af1);
+        }
+
+        #box20 {
+            height: 250px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 15% 85% 70% 30% / 60% 20% 80% 40%;
+            background-image: linear-gradient(to bottom, #1f1300, #512c25, #86465b, #a56eaa, #91a6ff);
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><div id="box1"></div></td>
+            <td><div id="box2"></div></td>
+            <td><div id="box3"></div></td>
+            <td><div id="box4"></div></td>
+        </tr>
+        <tr>
+            <td><div id="box5"></div></td>
+            <td><div id="box6"></div></td>
+            <td><div id="box7"></div></td>
+            <td><div id="box8"></div></td>
+        </tr>
+        <tr>
+            <td><div id="box9"></div></td>
+            <td><div id="box10"></div></td>
+            <td><div id="box11"></div></td>
+            <td><div id="box12"></div></td>
+        </tr>
+        <tr> 
+            <td><div id="box13"></div></td>
+            <td><div id="box14"></div></td>
+            <td><div id="box15"></div></td>
+            <td><div id="box16"></div></td>
+        </tr>
+        <tr> 
+            <td><div id="box17"></div></td>
+            <td><div id="box18"></div></td>
+            <td><div id="box19"></div></td>
+            <td><div id="box20"></div></td>
+        </tr>
+    </table>
+</body>
+</html>

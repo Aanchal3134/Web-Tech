@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 60px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            /* left right 0, top n bottom 10px */
+            margin: 10px 0px; 
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- box medal has 4 properties for every element
+    content box, padding box, border-box, margin-box  
+    height and width defines the content box
+    
+    PADding has 4 prop - top bottom left right - TRBL (TROUBLE)
+    if we pass 3 values then 10px, 20px, 30px - top, right and left, bottom
+    if we pass 2 values - top and bottom, right and top
+    1 value - all sides
+
+    border is outside the content area, the height and width we give is just for content area
+
+    but this is wrong- as whatever border we assign should be taken from the original box not outside of it as it affects  other elem
+
+    sPACE INSIDE THE BORDER BETWEEN THE BORDER AND CONTAINER IS PADDING
+    MARGIN IS SPACE OUTSIDE THE BORDER
+
+
+    giving box-sizing: border box helps in not increasing the size of box when i give padding 
+    otherwise giving border, padding increases the size of the elem
+
+
+
+    margin auto takes equal margin from left and right both and elem comes in center horizontally - look at the task1.html file                                                                                                                                                             
+    -->
+
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <p>Para 1</p>
+    <p></p>
+
+    <section class="container">
+        Hello this is the box
+    </section>
+</body>
+</html>

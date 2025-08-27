@@ -1,0 +1,16 @@
+/* 
+this file can be reused over and over again in different html pages by connecting the .css file with the link tag in html header section */
+
+div{ 
+    background-color: red;
+}
+li {
+    background-color: blue;
+}
+
+h1{
+    background-color: aquamarine;
+}
+/* 
+
+//descendant selector are used when we want to target only the descendants of a particular tag, rather than all the tags present in a file */

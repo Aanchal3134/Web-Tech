@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: none;
+        }
+
+        .profile:checked+img{
+            display: block;
+        }
+
+        .inp:checked~h5::after{
+            content:"@gmail.com";
+        }
+        #ts:checked~p::before{
+            content:"Miss ";
+        }
+        .mr:checked~p::before{
+            content:"Mr. ";
+        }
+    </style>
+</head>
+<body>
+    <table border="" cellspacing="20" cellpadding="40">
+        <tr>
+            <th>Profile</th>
+            <th>Email</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" class="profile">
+                <img src="https://media.npr.org/assets/img/2014/10/30/ts_photo_pr0500_0878_hirescrop-copy-1c18fc94f85d107d07d172a09685d53004d25857.jpg?s=1100&c=50&f=jpeg" alt="" height="150px" width="200px">
+            </td>
+            <td>
+                <input type="checkbox" class="inp">
+                <h5>tsAugust</h5>
+            </td>
+            <td>
+                <input type="checkbox" id="ts">
+                <p >Taylor Swift</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx0V9655jN36TNBp0JyOWGTmAKe309RMjVQ&s" alt="" height="100px" width="100px">
+            </td>
+            <td>
+                <input type="checkbox"  class="inp">
+                <h5>willJem</h5>
+            </td>
+            <td>
+                <input type="checkbox" class="mr">
+                <p>Will Herondale</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"  class="profile" >
+                <img src="https://i.pinimg.com/736x/61/94/eb/6194ebb30f9d34b092bf7bdf437cab41.jpg"alt="" height="100px" width="100px">
+            </td>
+            <td>
+                <input type="checkbox"  class="inp">
+                <h5>jaceCl</h5>
+            </td>
+            <td>
+                <input type="checkbox" class="mr">
+                <p>Jace Herondale</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

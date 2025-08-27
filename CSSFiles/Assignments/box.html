@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: none;
+        }
+        
+        #tick:checked+div{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+
+        #tick:checked+div:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="tick">
+    <div id="tick1"></div>
+</body>
+</html>
